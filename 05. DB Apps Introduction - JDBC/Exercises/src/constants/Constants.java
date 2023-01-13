@@ -22,5 +22,5 @@ public final class Constants {
     public static final String USER = "root";
     public static final String PASSWORD = "!Die69@32";
 
-    public Constants() {}
+    private Constants() {}
 }

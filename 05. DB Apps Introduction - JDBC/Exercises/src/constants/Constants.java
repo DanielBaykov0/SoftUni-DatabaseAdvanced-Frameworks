@@ -15,10 +15,10 @@ public final class Constants {
     public static final String DATABASE_CREATED_SUCCESSFULLY = "Database created successfully";
     public static final String ERROR_CREATING_DATABASE = "Error creating database";
     public static final String DATABASE_ERROR = "Database error";
-    public static final String TABLE_CREATED_SUCCESSFULLY = "Table created successfully";
-    public static final String ERROR_CREATING_TABLE = "Error creating table";
-    public static final String DATA_INSERTED_INTO_TABLE = "Data inserted into table";
-    public static final String ERROR_INSERTING_DATA_INTO_TABLE = "Error inserting data into table";
+    public static final String TABLES_CREATED_SUCCESSFULLY = "Tables created successfully";
+    public static final String ERROR_CREATING_TABLES = "Error creating tables";
+    public static final String DATA_INSERTED_INTO_TABLES = "Data inserted into tables";
+    public static final String ERROR_INSERTING_DATA_INTO_TABLES = "Error inserting data into tables";
     public static final String INVALID_VILLAIN_ID = "No villain with ID %d exists in the database";
     public static final String NO_MINIONS = "<no minions>";
     public static final String VILLAIN = "Villain: ";
@@ -37,6 +37,14 @@ public final class Constants {
     public static final String PORT = "3306";
     public static final String USER = "root";
     public static final String PASSWORD = "!Die69@32";
+
+    public static final String URL_HOST =
+            String.format("%s:%s://%s:%s?user=%s&password=%s",
+                    JDBC, DRIVER, HOST, PORT, USER, PASSWORD);
+
+    public static final String URL_DATABASE =
+            String.format("%s:%s://%s:%s/%s?user=%s&password=%s",
+                    JDBC, DRIVER, HOST, PORT, DATABASE, USER, PASSWORD);
 
     private Constants() {}
 }

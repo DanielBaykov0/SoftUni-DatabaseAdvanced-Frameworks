@@ -20,7 +20,6 @@ public class E02GetVillainsNames {
 
     private static void getSelectVillainsNamesWithMoreThanThreeMinions() {
 
-        String result = null;
         try (Connection connection = DriverManager.getConnection(Constants.URL_DATABASE);
              Statement statement = connection.createStatement();
              ResultSet resultSet = statement.executeQuery(SELECT_VILLAINS_NAMES_WITH_MORE_THAN_THREE_MINIONS)) {
